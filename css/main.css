@@ -71,7 +71,8 @@ child(4) - 's'; */
     grid-area: s;
 }
 
-
+/* specialize header and main blocks with width 65%, 
+center them with 'margin'property set to value 'auto' */
 
 header,
 main {
@@ -79,13 +80,22 @@ main {
     width: 65%;
 }
 
-/* Use the flexbox properties to layout the content of the emoji cards */
+/* Use the flexbox properties to layout the content of the emoji cards: 
+- set 'display' property to 'flex' - block '.emoji' becomes flexible;
+- set 'flex-direction' property to 'column', that specifies 
+the direction (vertical) of the flexible items; 
+- define how the browser distributes space between and around content items with 
+'justify-content' property which is se to 'space-between' value;
+The buttons in each card should be aligned with the bottom of the card using a flexbox property */
 
 .emoji {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+/* Have the emoji card content in proper order as required */
 
 .emoji h2 {
     order: 2;

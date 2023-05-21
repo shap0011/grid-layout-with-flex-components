@@ -1,0 +1,105 @@
+/* Copy the base CSS code from the README.md file */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.icon {
+    font-size: 4rem;
+}
+
+/* Add rest of the CSS to mutch the final HTML/CSS page with the image */
+
+/* Use the grid properties to layout the content of the emoji card.
+Turn the block 'emojis' into a grid container with adding 'display' property
+and assigning it to value 'grid'. 
+Specify the number of columns and the number of rows in the grid layout 
+with 'grid-template-columns' and 'grid-template-rows' properties 
+with values set to 'repeat(2, 1fr).  
+Specify each card position as required with property 'grid-template-area' */
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas:
+        "sf bm"
+        "tj s";
+}
+
+/* Add 'grid-area' property to each of block <div> 
+with class .emoji and assign them to the values:
+child(1) - 'sf';
+child(2) - 'bm';
+child(3) - 'tj';
+child(4) - 's'; */
+
+.emoji:nth-child(1) {
+    grid-area: sf;
+}
+
+.emoji:nth-child(2) {
+    grid-area: bm;
+}
+
+.emoji:nth-child(3) {
+    grid-area: tj;
+}
+
+.emoji:nth-child(4) {
+    grid-area: s;
+}
+
+/*  */
+
+header,
+main {
+    margin: auto;
+    width: 65%;
+}
+
+/* Use the flexbox properties to layout the content of the emoji cards */
+
+.emoji {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.emoji h2 {
+    order: 2;
+}
+
+.emoji span {
+    order: 1;
+    text-align: center;
+}
+
+.emoji p {
+    order: 3;
+}
+
+.emoji a {
+    order: 4;
+}

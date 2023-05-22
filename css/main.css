@@ -28,7 +28,7 @@ body {
     font-size: 4rem;
 }
 
-/* Add rest of the CSS to mutch the final HTML/CSS page with the image */
+/* Add rest of the CSS to match the final HTML/CSS page with the image */
 
 /* Use the grid properties to layout the content of the emoji card.
 Turn the block 'emojis' into a grid container with adding 'display' property
@@ -85,7 +85,7 @@ main {
 - set 'flex-direction' property to 'column', that specifies 
 the direction (vertical) of the flexible items; 
 - define how the browser distributes space between and around content items with 
-'justify-content' property which is se to 'space-between' value;
+'justify-content' property which is set to 'space-between' value;
 The buttons in each card should be aligned with the bottom of the card using a flexbox property */
 
 .emoji {

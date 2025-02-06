@@ -1,4 +1,4 @@
-(Click to open GitHub page)[https://shap0011.github.io/grid-layout-with-flex-components/]
+[Click to open GitHub page](https://shap0011.github.io/grid-layout-with-flex-components/)
 
 # Instructions
 

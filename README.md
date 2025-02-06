@@ -1,3 +1,5 @@
+(Click to open GitHub page)[https://shap0011.github.io/grid-layout-with-flex-components/]
+
 # Instructions
 
 Fork this repository to start working on the assignment.
